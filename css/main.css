@@ -1,0 +1,221 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0 auto;
+  min-width: 37.5rem;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.header {
+  text-align: center;
+  font-family: "Spartan", sans-serif;
+}
+
+.heading-1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #502050;
+  padding: 0 5rem;
+  margin-top: 2rem;
+}
+
+.heading-text {
+  font-size: 1.3rem;
+  margin-top: 1.3rem;
+  padding: 1.5rem 3rem;
+  line-height: 2rem;
+}
+
+.review {
+  text-align: center;
+}
+
+.review__box {
+  margin: 2rem 0;
+}
+
+.review__icon {
+  height: 2rem;
+  width: 2rem;
+  margin: .5rem;
+}
+
+.review__text {
+  color: #502050;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.cards {
+  margin-top: 1.5rem;
+  padding: 0 3rem;
+  font-family: "Spartan", sans-serif;
+}
+
+.cardbox {
+  margin: 2rem 0;
+  background-color: #502050;
+  border-radius: 5px;
+}
+
+.cardbox__headings {
+  margin-left: 2rem;
+}
+
+.cardbox__head {
+  padding: 1.5rem;
+  margin-left: 1.3rem;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+
+.cardbox__img {
+  overflow: hidden;
+}
+
+.cardbox__img img {
+  height: 100%;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.cardbox__name {
+  color: white;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.cardbox__title {
+  color: #ee68a4;
+  font-weight: 500;
+}
+
+.cardbox__text {
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #f7f2f7;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    background-image: url(../images/bg-pattern-top-desktop.svg);
+    background-size: 100% 100%;
+    background-size: cover;
+    max-width: 140rem;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .main {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10rem;
+    -webkit-box-shadow: 2rem 2rem 2rem rgba(147, 123, 146, 0.5);
+            box-shadow: 2rem 2rem 2rem rgba(147, 123, 146, 0.5);
+  }
+  .div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header {
+    width: 40%;
+    text-align: center;
+    margin-left: 6rem;
+  }
+  .review {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .review__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .review #box-2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    margin-left: 6rem;
+  }
+  .review #box-3 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    margin-left: 12rem;
+  }
+  .review__text {
+    margin-left: 2rem;
+  }
+  .cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[3];
+        grid-template-columns: repeat(3, minmax(25rem, 1fr));
+    margin: 0 5rem;
+  }
+  .cardbox {
+    margin: 2rem;
+  }
+  .cardbox__head {
+    margin: 1rem;
+  }
+  .cardbox__text {
+    padding: 2rem;
+  }
+  #card-2 {
+    -webkit-transform: translateY(1.5rem);
+            transform: translateY(1.5rem);
+  }
+  #card-3 {
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+}

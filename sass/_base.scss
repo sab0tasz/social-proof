@@ -1,0 +1,32 @@
+// Colors
+
+$color-dark-magenta: hsl(300, 43%, 22%);
+$color-pink: hsl(333, 80%, 67%);
+
+$color-dg-magenta: hsl(303, 10%, 53%);
+$color-lg-magenta: hsl(300, 24%, 96%);
+$color-white: hsl(0, 0%, 100%);
+
+// FONT
+
+$font-main: 'Spartan', sans-serif;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%; // 1rem - 10px
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0 auto;
+    min-width: 37.5rem;
+    max-width: 100%;
+    overflow-x: hidden;
+}
