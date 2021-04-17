@@ -1,8 +1,16 @@
 // 375px min width
 
+
+.body {
+    min-width: 37.5rem;
+    overflow-x: hidden;
+}
+
 .main {
     display: grid;
     place-items: center;
+
+    font-family: $font-main;
 }
 
 
@@ -10,7 +18,6 @@
 
 .header {
     text-align: center;
-    font-family: $font-main;
     
 }
 
@@ -34,21 +41,20 @@
 
     &__box {
         margin: 2rem 0;
+        background-color: $color-lg-magenta;
+        
     }
     &__icon {
         height: 2rem;
         width: 2rem;
         margin: .5rem;
-
-        svg {
-            
-        }
     }
 
     &__text {
         color: $color-dark-magenta;
         font-size: 1.5rem;
         font-weight: 700;
+        margin-top: 1rem;
     }
 }
 
@@ -58,20 +64,25 @@
     margin-top: 1.5rem;
     padding: 0 3rem;
     font-family: $font-main;
+    
 }
 .cardbox {
     margin: 2rem 0;
     background-color: $color-dark-magenta;
     border-radius: 5px;
+    min-width: 30rem;
+    max-width: 40rem;
+    
     
 
     &__headings {
         margin-left: 2rem;
+    
     }
 
 
     &__head {
-        padding: 1.5rem;
+        padding: 2rem;
         margin-left: 1.3rem;
         font-size: 1.5rem; 
         display: flex;
@@ -93,32 +104,67 @@
         color: $color-white;
         font-weight: 700;
         margin-bottom: .5rem;
+       
         
     }
 
     &__title {
         color: $color-pink;
         font-weight: 500;
+       
         
     }
 
     &__text {
-        padding: 1rem 3rem;
+        padding: 2rem 3rem;
         font-size: 1.4rem;
         line-height: 2rem;
         color: $color-lg-magenta;
         font-weight: 400;
+    
     }
 }
 
-// 1440 px width
+/*
+@media screen and (max-width: 787px) {
+    body {
+        max-width: 79rem;
+        display: grid;
+        place-items: center;
+    }
 
+    .main {
+        width: 100%;
+    }
+    
+    .header {
+        margin: 0 10rem;
+    }
+    .heading-1 {
+        font-size: 4rem;
+    }
+
+    .heading-text {
+        margin: 1rem 3rem;
+    }
+
+    .review {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 10rem;
+    }
+
+    #box-3 {
+        width: 100%;
+        margin-left: 13rem;
+    }
+
+ 
+    
+} */
+// 1440 px width
 @media screen and (min-width: 1400px) {
     body {
-        background-image: url(../images/bg-pattern-top-desktop.svg);
-        background-size: 100% 100%;
-        background-size: cover;
-        
         max-width: 140rem;
         display: grid;
         place-items: center;
@@ -127,8 +173,11 @@
     .main {
         margin: 0 auto;
         width: 100%;
+        max-width: 140rem;
         padding: 10rem;
         box-shadow: 2rem 2rem 2rem rgba($color-dg-magenta, .5);
+
+        font-family: $font-main;
     }
 
     .div {
@@ -136,11 +185,20 @@
     margin-bottom: 1.5rem;
     align-items: center;
     }
+    
+    .heading-1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
 
     .header {
         width: 40%;
-        text-align: center;
-        margin-left: 6rem;
+        margin: 0 5.3rem;
+        text-align: left;
+    }
+
+    .heading-text {
+        margin-left: 2rem;
     }
 
     .review {
@@ -156,12 +214,12 @@
 
         #box-2 {
             flex: 1 0 100%;
-            margin-left: 6rem;
+            margin-left: 10rem;
         }
 
         #box-3 {
             flex: 1 0 100%;
-            margin-left: 12rem;
+            margin-left: 14rem;
         }
 
         &__text {
@@ -198,3 +256,4 @@
         transform: translateY(3rem);
     }
 }
+
