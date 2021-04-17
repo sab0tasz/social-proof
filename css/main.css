@@ -185,8 +185,6 @@ body {
     width: 100%;
     max-width: 140rem;
     padding: 10rem;
-    -webkit-box-shadow: 2rem 2rem 2rem rgba(147, 123, 146, 0.5);
-            box-shadow: 2rem 2rem 2rem rgba(147, 123, 146, 0.5);
     font-family: "Spartan", sans-serif;
   }
   .div {
