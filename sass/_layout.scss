@@ -168,6 +168,9 @@
         max-width: 140rem;
         display: grid;
         place-items: center;
+        
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-size: cover;
     }
 
     .main {
